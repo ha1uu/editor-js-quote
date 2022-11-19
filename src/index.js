@@ -1,6 +1,6 @@
-import "./index.styl"
+require("./index.css").toString()
 
-export default class Quote {
+class Quote {
   rootClass = 'editor-js-quote-plugin';
   caption = null;
   text = null;
@@ -121,3 +121,5 @@ export default class Quote {
     };
   }
 }
+
+module.exports = Quote;
